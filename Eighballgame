@@ -1,0 +1,41 @@
+let useName='';
+(useName)?console.log('true'):console.log('false');
+//Variable that Question that user wants to the magic Ball
+const userQuestion='Will become werewolf tonigh?'
+//Displaying user question in the 
+console.log(userQuestion);
+//Generatina a generic number in the random.
+let randomNumber=Math.floor(Math.random()*8);
+//this variable will be keeping the value of the eightball
+let eightBall='';
+//the switch case will the random number.
+switch(randomNumber){
+  case 0:
+    eightBall='It is certain';
+    break;
+  case 1:
+    eightBall='It is decidedly so';
+    break;
+  case 2:
+    'Reply hazy try again';
+    break;
+  case 3:
+    'Cannot predit now';
+     break;
+  case 4:
+    eightBall='Do not count on it';
+    break;
+  case 5:
+    eightBall='My sources say no';
+    break;
+  case 6:
+    eightBall='Outlook not so good';
+    break;
+  case 7:
+    eightBall='Signs point to yes';
+    break;
+    
+    
+}
+//Display the aswer from the ball.
+console.log(eightBall);
