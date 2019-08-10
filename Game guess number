@@ -1,0 +1,39 @@
+let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
+let human =0;
+
+// Write your code below:
+//this function will generate a random number.
+const generateTarget= () => {
+  Math.floor(Math.random()*9)
+}
+// this computer will return the number check who is near from the targe number
+const compareGuesses= (user,computer,target) => {
+  
+  if(getAbsoluteDistance(target,human) >= getAbsoluteDistance(target,computer) ) {
+    return true;
+  }else { return false;
+        }
+  
+}
+const update =(winner) => {
+  if( winner === 'computer' ){
+    computerScore+=1;
+  }else{
+    humanScore +=1;
+  }
+}
+
+const advanceRound= () => {
+  currentRoundNumber +=1;
+}
+const getAbsoluteDistance= (target,competitors) => {
+  Math.abs(human-computer);
+}
+//this function will check if the function it is in the range.
+let alert = () => {
+  if(human>0 && human < 9){
+    console.log('number guess is out of rank')
+  }
+}
