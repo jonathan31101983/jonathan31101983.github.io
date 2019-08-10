@@ -1,0 +1,69 @@
+const getUserChoice=(userInput) =>{ userInput=userInput.toLowerCase();
+if(userInput==='rock' || userInput==='paper' || userInput==='scissor' || userInput==='bomb' ){
+  return userInput;
+}else{
+  console.log('please write the proper option');
+}
+                                  
+                                   };
+//this is the pc choice
+let getComputerChoice=() => {
+  let random=Math.floor(Math.random()*3);
+  switch (random) {
+    case 0:
+    return 'rock';
+    
+    case 1: 
+    return 'paper';
+    
+    default:
+    return 'scissor';
+    
+    
+  } };
+//this function will check if tied
+let determineWinner=(userChoice,computerChoice) =>{
+  if (userChoice===computerChoice){
+    return 'the game was a tie';
+  }
+//this coditiona checks if the user choice rock and compare with comuter choice 
+  if (userChoice ==='rock'){
+    if( computerChoice === 'paper'){
+    return 'computer won';
+}else{
+    return 'user won';
+}
+  }
+  if (userChoice==='paper'){
+    if (computerChoice==='scissors'){
+      return 'computer won';
+    }else{
+      return 'user won';
+    }
+  }
+  if (userChoice === 'scissors'){
+    if(computerChoice === 'rock'){
+      return 'computer won';
+    }else{
+      return 'User won';
+    }
+    
+  }
+  if (userChoice==='bomb'){
+    return 'user won';
+  }
+  
+  
+  }
+
+//Create a function create game.
+ 
+const playGame = () => {
+  const userChoice=getUserChoice(userInput='bomb');
+  const computerChoice=getComputerChoice();
+  console.log('You threw ' + userChoice);
+  console.log('The computer threw :'+computerChoice );
+  console.log(determineWinner(userChoice,computerChoice));
+  
+};
+playGame();
