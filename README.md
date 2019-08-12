@@ -24,3 +24,8 @@ https://codepen.io/jonathan31101983/pen/ZgqKjy
 ### Guess number
 This game is  compare the guess a human user and the pc, there is a target number which is compare with both compatitors. The near to the goal wins.
 https://codepen.io/jonathan31101983/pen/pMxwep
+
+## Project 5
+### Secret message
+
+The idea is to practice , the arrays. Transforming arrays string into secreat messages.
