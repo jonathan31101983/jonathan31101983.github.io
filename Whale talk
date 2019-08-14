@@ -1,1 +1,33 @@
+// Input variable it will contain the value of the phrase we want to translate.
+let  input = "turpentine and turtles";
+//the whales only speak vowels , so variable vowels it will extract the vowels from the string.
+const vowels = ['a','e','i','o','u'];
+// the resultArray will be the place to store the wocals extrated from input.
+let resultArray=[];
+//this loop will will count the numer of characters.
+for(let i=0; i<input.length; i++ ){
+    
+  //this nested loop will allow you to loop over vowels
 
+  
+  for(let j=0;j<vowels.length;j++ ){
+    
+   if(vowels[j]===input[i]){
+     resultArray.push(vowels[j]);
+   
+   }
+    }
+  // the whiles double the ee, this conditional check if there is another vocal equals 'e' i will push it into the array.
+    if (input[i]==='e' || input[i]==='u'){
+      resultArray.push(input[i])
+  
+  }
+ 
+}
+//Puttin the array resultArray in one word.
+//join() method can be use to join the elements from the string , also to put the letter upper the method toUpperCase().
+console.log(resultArray.join('').toUpperCase());
+
+//testing values and spected result
+//myArray='a whale of a deal!'='AAEEOAEEA'
+//myArray='Hi, Human' => 'UUEEIEEAUUEE'
