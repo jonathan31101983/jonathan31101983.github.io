@@ -32,7 +32,7 @@ The idea is to practice , the arrays. Transforming arrays string into secreat me
 
 https://codepen.io/jonathan31101983/pen/PoYwoWo
 
-#Project 6:
+# Project 6:
 ### Whale Talk
 
 This project is practice the use of loops in javascript, its come codeacademy course introduction to javascript.Take a phrase like ‘turpentine and turtles’ and translate it into its “whale talk” equivalent: ‘UUEEIEEAUUEE’.
