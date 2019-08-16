@@ -55,3 +55,6 @@ forEach() :it will excute  the callback function over all element, but if the th
 reduce(): it may have to parameters ,accumulator, currentValue, it will return one value, example the sum of all the element of the array.
 filter():Iterate over all the element of the array and generate a new array. For those element who has evaluated true, are return.
 
+https://codepen.io/jonathan31101983/pen/oNvLgvG
+
+
