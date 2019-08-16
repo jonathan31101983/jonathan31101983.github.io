@@ -45,3 +45,13 @@ Once we have converted text to the whale language, the result is sung slowly, as
 
 https://codepen.io/jonathan31101983/pen/YzKqyeE
 
+## Project 7:
+### Mini  linting
+
+Linting, a process by which text is evaluated and improved by an application.This small appliaction use arrays and iteration methods, like 
+This methods dont change the original value of the array iterate.
+map() : this method will loop over all the elements excuting the callback function and returning a array.
+forEach() :it will excute  the callback function over all element, but if the this function doest fill the condition it will return indefine.
+reduce(): it may have to parameters ,accumulator, currentValue, it will return one value, example the sum of all the element of the array.
+filter():Iterate over all the element of the array and generate a new array. For those element who has evaluated true, are return.
+
