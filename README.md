@@ -1,4 +1,4 @@
-# Project :
+# Project -JavaScript :
 
 The following project a have been taken from my codecademy account, in order to refresh my programming skills.There are pure javascripts
 
@@ -57,4 +57,8 @@ filter():Iterate over all the element of the array and generate a new array. For
 
 https://codepen.io/jonathan31101983/pen/oNvLgvG
 
+
+## Project 8
+### Meal maker
+This create a three-course meal based on what is available on a menu. We’ll keep running it until we’re satisfied with the generated meal!.The idea of this project is to practice the the objects in javascript and the different methods to manipulate them.
 
