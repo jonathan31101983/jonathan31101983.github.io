@@ -1,0 +1,66 @@
+// Promise
+//process a atm wisdraw, right password, right amout to widraw.
+
+/**Testing cases  */
+const atm = {
+    cost: 5,
+    password: '1234',
+    balance: 3000
+};
+
+//this my personal login:
+const personal = {
+    password: '1234',
+    balance: 3000,
+    wisdraw: false,
+};
+
+//checking password
+console.log("please you personal password");
+const login = (data) => {
+    return new Promise((resolve, reject) => {
+        let traffic = () => {
+            return Math.random() * 10000
+        };
+
+        setTimeout(() => {
+            const password = data.password;
+            if (password === atm.password) {
+                console.log('password accepted and your balance is:' + atm.balance);
+                console.log('the amount to wish to wisdraw ' + data.balance);
+                resolve([data.balance, data.wisdraw]);
+            } else {
+                reject('incorrect password');
+            }
+        }, traffic())
+    });
+};
+//the function check if its possible to wisdraw, after some time
+const wisdraw = (data2) => {
+
+    return new Promise((resolve, reject) => {
+        let traffic = () => {
+            return Math.random() * 10000
+        };
+        setTimeout(() => {
+            if (data2[0] <= atm.balance) {
+                if (data2[0] === atm.balance) {
+                    reject('the amount not enough to cover the cost, at least you should have:+5');
+                } else {
+                    resolve('thanks for your transaction and your actual balance is:' + (atm.balance - data2[0]));
+                }
+
+
+            } else {
+                reject('choose less amount of money.');
+            }
+        }, traffic());
+    })
+};
+
+
+// composition of the promises.
+//login functio is call, and return promise1,
+//if login is resolve will go then() will return promises:either //resolve or rejected.the catch() will return error
+
+login(personal).then(promise1 => wisdraw(promise1)).then((promise2) => console.log(promise2)).catch((error) => console.log(error));
